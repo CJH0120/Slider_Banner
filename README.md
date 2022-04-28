@@ -41,12 +41,11 @@
   
    </div>
    <hr>
-     <div align="center"> 
-  <h2> 후기 </h2>   </div> <span> 로직을 짜는데 엄청난 시간이 필요했고 처음으로 남이 아닌 내코드로 진행을 해보았고, 클린코드에대해 많은 연구를 했다. <br/><br/>내가 봤을때는 성공      적인거 같다. 재미있었고, 또 다른게 생각나면 할예정이다.  
-  <br/>
-  
+
+   <div align="center"> 
   <h2> 자동 슬라이드 추가 ++</h2>
     <img src="https://user-images.githubusercontent.com/97073471/165800240-ab7d8a0d-0516-4416-b67f-5602de10cb67.png" />
       어렵지 않게 구현하여 자동 슬라이드까지 완성하였다.
 
 </span>
+</div>
