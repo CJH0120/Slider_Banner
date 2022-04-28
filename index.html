@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+  
+</head>
+<script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+<body>
+    
+    <div class="M_Banner_Area"> 
+        <div class="M_Banner_Wrap">
+            <div class="M_Banner_imgs">
+
+        <script> 
+
+        function search() { 
+        let result= [];
+        $.ajax({
+          url : "https://api.themoviedb.org/3/movie/popular?api_key=84681a7022280cff3021d07fe9117b39",
+          dataType: "json",	
+          type: "get",
+          async: false,
+          success: function(data) {
+             result= data.results
+          },
+            error: function (){alert("실패");}
+        });
+        return result;
+
+     }
+
+        const img =search().slice(0,10)
+        
+         img?.map((imgs,index)=>{
+             
+            let img= document.createElement('img');
+            img.src=`https://image.tmdb.org/t/p/w500${imgs.poster_path}`;
+            img.className=`banner_img${index} banner_img ${imgs.id} `
+            img.id=`imgss`
+            document.querySelector(".M_Banner_imgs").appendChild(img)
+        
+        })
+       
+        
+        </script>
+                  
+            </div>
+            <div class="banner_arrow">
+               <a class="left"><img src="https://www.joara.com/assets/ic/pc-web/bt_arr_visual_left.png"/></a>
+                <a class="right"><img src="https://www.joara.com/assets/ic/pc-web/bt_arr_visual_right.png"/> </a>
+            </div>
+            
+            <div class="img_num">
+            <ul>
+
+            <!-- <script>
+                      img?.map((imgs,index)=>{
+             let pageli= document.createElement('li');
+             pageli.className=`${index} pageli`
+             document.querySelector(".img_num").appendChild(pageli);
+                    
+            })   
+
+                </script>  -->
+                </ul>
+            </div>
+
+
+    </div>
+</body>
+<script src="./index.js"></script>
+
+
+script>
+</html>
