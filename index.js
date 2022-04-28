@@ -7,9 +7,9 @@ const prev = document.querySelector('.left'); //이전 버튼
 const next = document.querySelector('.right'); //다음 버튼
 
 
-mcurrentIdx = -1;
 currentIdx =0;
-pcurrentIdx =1;
+mcurrentIdx = currentIdx-1;
+pcurrentIdx =currentIdx+1;
 
 function set (){
    currentIdx===10?currentIdx=0:"";
@@ -26,19 +26,21 @@ function set (){
 }
 ///시작
 window.onload=()=>{
+//초기값 세팅
 removes()
-change()
-   }
+change()  
+
+//오토 시작
+auto ()
+}
 
 
+//  slideImg[i] 클래스 삭제 중복방지
 function removes(){
    for(i=0; i< slideCount;i++){
       slideImg[i].classList.remove('addd','leftadd','rightadd')
-      
    }
-
 }
-
 
 next.addEventListener('click',function(){
    mcurrentIdx++
@@ -64,7 +66,7 @@ prev.addEventListener('click',function(){
 
 
 
-   function change(){
+ function change(){
    set ()
    
    mainslide.classList.add('addd');
@@ -74,5 +76,14 @@ prev.addEventListener('click',function(){
    }
    
    
+//자동 슬라이드
+function auto (){
+   set();
+   mcurrentIdx++
+   currentIdx++
+   pcurrentIdx++
+   removes();
+   change();
 
-
+   setTimeout(auto, 4000);
+}
