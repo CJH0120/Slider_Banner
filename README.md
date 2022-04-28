@@ -45,7 +45,7 @@
    <div align="center"> 
   <h2> 자동 슬라이드 추가 ++</h2>
     <img src="https://user-images.githubusercontent.com/97073471/165800240-ab7d8a0d-0516-4416-b67f-5602de10cb67.png" />
-      어렵지 않게 구현하여 자동 슬라이드까지 완성하였다.
+     <br/> 어렵지 않게 구현하여 자동 슬라이드까지 완성하였다.
 
 </span>
 </div>
