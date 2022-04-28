@@ -23,7 +23,7 @@
 <br/> <br/>
 <hr>
  <div align="center"> 
-<img src="https://user-images.githubusercontent.com/97073471/165776556-08615ad5-edec-45e2-b248-f895cbadf550.png" />
+<img src="https://user-images.githubusercontent.com/97073471/165799814-0a094c94-872d-4724-89ec-814cfd816a8e.png" />
 <br/> <br/>
   <span>set으로 전역 변수를 지정해주어 코드를 간결화하였다</span>
   
@@ -31,6 +31,7 @@
   <hr>
   <br/> <br/><br/> <br/>
    <div align="center"> 
+  
   <img src="https://user-images.githubusercontent.com/97073471/165781081-99d37a5f-2b1c-42aa-8cc4-cff28657600c.png" />
 <br/> <br/>
   <span>처음에     mcurrentIdx = currentIdx-1; currentIdx =0;pcurrentIdx =currentIdx+1; 을 사용했는데 오류가 발생하여</span>    <br/> <br/>
@@ -41,6 +42,11 @@
    </div>
    <hr>
      <div align="center"> 
-  <h2> 후기 </h2>   </div> <span> 로직을 짜는데 엄청난 시간이 필요했고 처음으로 남이 아닌 내코드로 진행을 해보았고, 클린코드에대해 많은 연구를 했다. <br/><br/>내가 봤을때는 성공적인거 같다. 재미있었고, 또 다른게 생각나면 할예정이다.  
+  <h2> 후기 </h2>   </div> <span> 로직을 짜는데 엄청난 시간이 필요했고 처음으로 남이 아닌 내코드로 진행을 해보았고, 클린코드에대해 많은 연구를 했다. <br/><br/>내가 봤을때는 성공      적인거 같다. 재미있었고, 또 다른게 생각나면 할예정이다.  
+  <br/>
+  
+  <h2> 자동 슬라이드 추가 ++</h2>
+    <img src="https://user-images.githubusercontent.com/97073471/165800240-ab7d8a0d-0516-4416-b67f-5602de10cb67.png" />
+      어렵지 않게 구현하여 자동 슬라이드까지 완성하였다.
 
 </span>
